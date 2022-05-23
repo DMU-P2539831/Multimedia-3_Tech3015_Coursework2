@@ -1,0 +1,81 @@
+﻿Type,Name,Price,Location,Time_Start,Time_Stop,N_Month_Start,N_Month_Stop,S_Month_Start,S_Month_Stop
+Bug,Common Butterfly ,160,Flying,4,19,9,6,3,12
+Bug,Yellow Butterfly ,160,Flying,4,19,3,6,9,12
+Bug,Tiger Butterfly ,240,Flying,4,19,3,9,9,3
+Bug,Peacock Butterfly ,2500,Flying By Hybrid Flowers,4,19,3,6,9,12
+Bug,Common Bluebottle,300,Flying,4,19,4,8,10,2
+Bug,Paper Kite Butterfly ,1000,Flying,8,19,1,12,7,6
+Bug,Great Purple Emperor,3000,Flying,4,19,5,8,11,2
+Bug,Monarch Butterfly ,140,Flying,4,17,9,11,3,5
+Bug,Emperor Butterfly ,4000,Flying,17,8,12,3,6,9
+Bug,Agrias Butterfly ,3000,Flying,8,17,4,9,10,3
+Bug,Rajah Brooke's Birdwing,2500,Flying,8,17,4,9,10,3
+Bug,Queen Alexandra's Birdwing,4000,Flying,8,16,5,9,11,3
+Bug,Moth,130,Flying Near Light Sources,19,4,1,12,7,6
+Bug,Atlas Moth,3000,On Trees,19,4,4,9,10,3
+Bug,Madagascan Sunset Moth,2500,Flying,8,16,4,9,10,3
+Bug,Long Locust,200,On The Ground,8,19,4,11,10,5
+Bug,Migratory Locust,600,On The Ground,8,19,8,11,2,5
+Bug,Rice Grasshopper,160,On The Ground,8,19,8,11,2,5
+Bug,Grasshopper,160,On The Ground,8,17,7,9,1,3
+Bug,Cricket,130,On The Ground,17,8,9,11,3,5
+Bug,Bell Cricket,140,On The Ground,17,8,9,10,3,4
+Bug,Mantas,430,On Flowers,8,17,3,11,9,5
+Bug,Orchid Mantas,2400,On White Flowers,8,17,3,11,9,5
+Bug,Honeybee,200,Flying,8,17,3,7,9,1
+Bug,Wasp,2500,Shaking Trees,0,24,1,12,7,6
+Bug,Brown Cicada,250,On Trees,8,17,7,8,1,2
+Bug,Robust Cicada,300,On Trees,8,17,7,8,1,2
+Bug,Giant Cicada,500,On Trees,8,17,7,8,1,2
+Bug,Walker Cicada,400,On Trees,8,17,8,9,2,3
+Bug,Evening Cicada,550,On Trees,16,19,7,8,1,2
+Bug,Cicada Shell,10,On Trees,0,24,7,8,1,2
+Bug,Red Dragonfly,180,Flying,8,19,9,10,3,4
+Bug,Darner Dragonfly,230,Flying,8,17,4,10,10,4
+Bug,Banded Dragonfly,4500,Flying,8,17,5,10,11,4
+Bug,Damselfy,500,Flying,0,24,11,2,5,8
+Bug,Firefly,300,Flying,29,16,6,6,12,12
+Bug,Mole Cricket,500,Underground,0,24,11,5,5,11
+Bug,Pondskater,130,On Fresh Water,8,19,5,9,11,3
+Bug,Diving Beetle,800,On Fresh Water,8,19,5,9,11,3
+Bug,Giant Water Bug,2000,On Fresh Water,19,8,4,9,10,3
+Bug,Stinkbug,120,On Flowers,0,24,3,10,9,4
+Bug,Man-faced Stink Bug,1000,On Flowers,19,8,3,10,9,4
+Bug,Ladybug,200,On Flowers,8,17,3,6,9,12
+Bug,Tiger Beetle,1500,On The Ground,0,24,2,10,8,4
+Bug,Jewel Beetle,2400,On Tree Stumps,0,24,4,8,10,2
+Bug,Violin Beetle,450,On Tree Stumps,0,24,9,11,3,5
+Bug,Citrus Long-horned Beetle,350,On Tree Stumps,0,24,0,12,6,6
+Bug,Rosalia Batesi Beetle,3000,On Tree Stumps,0,24,5,9,11,3
+Bug,Blue Weevel Beetle,800,On Palm Trees,0,24,7,8,1,2
+Bug ,Dung Beetle,3000,Rolling Snowballs Along The Ground,0,24,12,2,6,8
+Bug,Earth-boring Dung Beetle,300,On The Ground,0,24,7,9,1,3
+Bug,Scarab Beetle,10000,On Trees,23,8,7,8,1,2
+Bug,Drone Beetle,200,On Trees,0,24,6,8,12,2
+Bug,Goliath Beetle,8000,On Palm Trees,17,8,6,9,12,3
+Bug,Saw Stag,2000,On Trees,0,24,7,8,1,2
+Bug,Miyama Stag,1000,On Trees,0,24,7,8,1,2
+Bug,Giant Stag,10000,On Trees,23,8,7,8,1,2
+Bug,Rainbow Stag,6000,On Trees,19,8,6,9,12,3
+Bug,Cyclommatus Stag,8000,On Palm Trees,17,8,7,8,1,2
+Bug,Golden Stag,12000,On Palm Trees,17,8,7,8,1,2
+Bug,Giraffe Stag,12000,On Palm Trees,17,8,7,8,1,2
+Bug,Horned Dynastid,1350,On Palm Trees,17,8,7,8,1,2
+Bug,Horned Atlas,8000,On Palm Trees,17,8,7,8,1,2
+Bug,Horned Elephant,8000,On Palm Trees,17,8,7,8,1,2
+Bug,Hprned Hercules,12000,On Palm Trees,17,8,7,8,1,2
+Bug,Walking Stick,600,On Trees,17,19,7,11,1,5
+Bug,Walking Leaf,600,Disguised As Leaves,0,24,7,9,1,3
+Bug,Bagworm,600,Shaking Trees,0,24,1,12,7,6
+Bug,Ant,80,On Rotten Food,0,24,1,12,7,6
+Bug,Hermit Crab,1000,Disguised As Shells,19,8,1,12,7,6
+Bug,Wharf Roach,200,On Rocks At The Beach,0,24,1,12,7,6
+Bug,Fly,60,On Trash,0,24,1,12,7,6
+Bug,Mosquito,130,Flying,17,4,6,9,12,3
+Bug,Flea,70,On Villagers,0,24,4,11,10,5
+Bug,Snail,250,On Rocks And Bushes In The Rain,0,24,1,12,7,6
+Bug,Pill Bug,250,Hitting Rocks,23,16,9,6,3,12
+Bug,Centipede,300,Hitting Rocks,16,23,9,6,3,12
+Bug,Spider,480,Shaking Trees,19,8,1,12,7,6
+Bug,Tarantula,8000,On The Ground,19,4,11,5,5,11
+Bug,Scorpion,8000,On The Ground,19,4,6,10,12,4

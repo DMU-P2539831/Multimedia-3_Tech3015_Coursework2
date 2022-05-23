@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/AnimalCrossingCW2.css" type="text/css" rel="stylesheet">
+      <!-- From Line 1 to 288 -->
+    <title></title>
+        <!-- Mobile First!! Media Queries, Dont Forget -->
+  </head>
+  <body>
+
+<!--___________________________ HEADER + NAV  _____________________________-->
+    <header>
+      <!-- Here will include the animal crossing intro / title, the time/date aspect, and potentially the nav bar -->
+      <video width="100%" height="100%" muted autoplay loop>
+        <source src="video/ACNHCustTitle.mp4" type="video/mp4">
+        <source src="video/ACNHCustTitle.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <!-- Temporary Title -->
+      <!-- <h1> Animal Crossing </h1> -->
+    </header>
+
+<!--___________________________ BULLETIN BOARD  _____________________________-->
+      <div id="BulletinBoardTab" Class="HomeTab">
+          <!-- Here will be a link to twitter / API ?  -->
+            <div Class="HomeTabHeader">
+              <img src="img/icons/IslandNewspaper.png" class="SectionIcons">
+              <h2> Bulletin Board:</h2>
+                <div class="HTHorizLine BulletinLine"></div>
+            </div>
+            <div class="HomeTabBody">
+              <div class="HTVertLine BulletinLine"></div>
+            <!--  <div id ="BulletinContents"> -->
+
+              </div>
+            </div>
+
+          </div>
+
+<!-- DIVIDER -->
+
+<!--___________________________ ISLAND LIFE 101 _____________________________-->
+      <div id="IslandLifeTab" Class="HomeTab">
+        <div Class="HomeTabHeader">
+          <img src="img/icons/IslandLife101.png" class="SectionIcons">
+          <h2> Island Life 101:</h2>
+            <div class="HTHorizLine IslandLine"></div>
+        </div>
+        <div class="HomeTabBody">
+          <div class="HTVertLine IslandLine"></div>
+          <div id ="IslandContents">
+            <p id="TipOfDay"> Tip Of The Day! </p>
+          </div>
+        </div>
+
+      </div>
+
+
+<!-- DIVIDER -->
+
+<!--____________________________ NOOK SHOPPING _____________________________-->
+
+      <div id="NookShoppingTab" Class="HomeTab">
+        <div Class="HomeTabHeader">
+          <img src="img/icons/NookShopping.png" class="SectionIcons">
+          <h2>Nook Shopping:</h2>
+            <div class="HTHorizLine ShoppingLine"></div>
+        </div>
+        <div class="HomeTabBody">
+          <div class="HTVertLine ShoppingLine"></div>
+            <div id ="ShoppingContents">
+              <p id="Promotion"> Promotion: </p>
+              <p id="Promotion"> Super Mario 35th Anniversary! </p>
+
+              <div id="ShoppingContents">
+                <img src ="img/Shopping/1UPMushroomIcon.png"/>
+                <div class="Item">
+                  <img src ="img/AssetIcons/FurnitureLeafBIG.png" class = "LeafIcon"/>
+                  <p class="ItemText">1-UP Mushroom </p>
+                </div>
+                <div class="Price">
+                  <img src ="img/AssetIcons/BellsIcon.png" class = "BellsIcon" />
+                  <p class="PriceText">2,000 </p>
+              </div>
+
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+
+<!-- DIVIDER -->
+
+<!--____________________________ ISLAND FASHION _____________________________-->
+      <div id="IslandFashionTab" Class="HomeTab">
+        <div Class="HomeTabHeader">
+          <img src="img/icons/AbleSisters.png" class="SectionIcons">
+            <h2>Island Fashion:</h2>
+            <div class="HTHorizLine FashionLine"></div>
+        </div>
+        <div class="HomeTabBody">
+          <div class="HTVertLine FashionLine"></div>
+            <div id ="FashionContents">
+              <p id="SeasonalCloth"> Seasonal Clothing! </p>
+                <div class="FashionImages">
+                  <!--images / div per image/text (item)-->
+                  <div>
+                    <!-- Item 1 -->
+                      <img src="img/islandFashion/SantaHatIcon.png">
+                      <p> Santa Hat</p>
+                      <div class="Price">
+                        <img src= "img/AssetIcons/BellsIcon.png" class = "BellsIcon"/>
+                      <p class="PriceText"> 1,500 Bells </p>
+                  </div>
+                </div>
+
+                  <div>
+                    <!-- Item 2 -->
+                    <img src="img/islandFashion/FestiveSweaterIcon.png">
+                    <p>Festive Sweater</p>
+                    <div class="Price">
+                      <img src= "img/AssetIcons/BellsIcon.png" class = "BellsIcon"/>
+                    <p class="PriceText"> 1,000 Bells </p>
+                  </div>
+                </div>
+
+                  <div>
+                    <!-- Item 3 -->
+                    <img src="img/islandFashion/Faux-SheerlingBootsIcon.png">
+                    <p> Faux-Shearling Boots </p>
+                      <div class="Price">
+                        <img src= "img/AssetIcons/BellsIcon.png" class = "BellsIcon"/>
+                        <p class="PriceText"> 350 </p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+<!-- DIVIDER -->
+
+<!--____________________________ CRITERPEDIA _____________________________-->
+<!-- Overall div -->
+      <div id="CritterpediaTab" Class="HomeTab">
+        <div Class="HomeTabHeader">
+          <!-- title, icon, horizontal line div -->
+          <img src="img/icons/Critterpedia.png" class="SectionIcons">
+            <h2> Critterpedia:</h2>
+            <div class="HTHorizLine  CritterLine"></div>
+        </div>
+        <div class="HomeTabBody">
+            <!-- overall body / horisontal line  div -->
+            <div class="HTVertLine CritterLine"></div>
+              <div id ="CritterContents">
+                  <!-- contents div -->
+              <p id="CrittAvail"> Critters Available: </p>
+              <p id ="NH"> Northern Hemisphere </p>
+                <div class="CritterImages">
+                    <!-- critter images grid div 1 NH-->
+                  <!--images / div per image/text (item)-->
+                    <div>
+                      <!-- Bug -->
+                      <img src="img/critterpedia/DungBeetleIcon.png">
+                      <p> Dung Beetle</p>
+                    </div>
+
+                    <div>
+                      <!-- Fish -->
+                      <img src="img/critterpedia/SeaButterflyIcon.png">
+                      <p>Sea Butterfly</p>
+                    </div>
+
+                    <div>
+                      <!-- Sea Creature -->
+                      <img src="img/critterpedia/LobsterIcon.png">
+                      <p> Lobster </p>
+                    </div>
+                </div>
+              <p id = "SH" > Southern Hemisphere </p>
+                <div class="CritterImages">
+                  <!-- critter images grid div 2 SH-->
+                  <!--images -->
+                  <div>
+                    <!-- Bug -->
+                    <img src="img/critterpedia/MantisIcon.png">
+                    <p>  Mantis</p>
+                  </div>
+
+                  <div>
+                    <!-- Fish -->
+                    <img src="img/critterpedia/WhaleSharkIcon.png">
+                    <p>Whale Shark </p>
+                  </div>
+
+                  <div>
+                    <!-- Sea Creature -->
+                    <img src="img/critterpedia/GazamiCrabIcon.png">
+                    <p> Gazami Crab</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+
+<!-- DIVIDER -->
+
+<!--____________________________ BACK TO TOP _____________________________-->
+      <div Class="BTTOuter">
+        <div Class="BTTContent">
+          <p Class="BTTtext"> Back To Top </p>
+        </div>
+      </div>
+
+      <footer>
+      <!-- Here will include a potential footer image like on the actual Animal Crossing websites, but most improtantly copyright information / disclaimers  -->
+      </footer>
+
+<!--________________________________ MENU ___________________________________-->
+
+
+
+  </body>
+</html>
