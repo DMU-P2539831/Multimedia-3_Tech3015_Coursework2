@@ -10,11 +10,13 @@
   <body id="Bulletin_Body">
 
         <!-- Header -->
-      <img src="img/AssetIcons/BackICON.png" class="BackHome">
+        <div class="backDiv">
+          <img id="back" src="img/AssetIcons/BackICON.png" class="BackHome">
+        </div>
     <!-- Maybe Include Nav/Menu -->
     <!-- Header -->
 
-    <div>
+    <div class = "titleDiv">
     <h1 id="BulletinTitle"> The Bulletin Board</h1>
     <img src="img/icons/IslandNewspaper.png" id="BulletinIcon">
     </div>
@@ -29,12 +31,28 @@
 
 
 
-    <!-- DIVIDER -->
+    <div id="BulletinHorizLine"></div>
 
     <div>
-      <!-- Page Content -->
+      <a class="twitter-timeline" href="https://twitter.com/animalcrossing?ref_src=twsrc%5Etfw">Tweets by animalcrossing</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
+    <div id="BTTOuter">
+      <div id="BTTContent">
+        <img src="img/AssetIcons/ArrowVerti.png" id="VertiArrowIcon">
+        <p id="BTTtext"> Back To Top </p>
+        <div id="BTTHorizLine"></div>
+      </div>
+    </div>
 
   </body>
+  <script type="text/javascript">
+    document.getElementById("back").addEventListener('click', function (e) {
+      window.location = 'AnimalCrossingCW2.html';
+    });
+
+    document.getElementById("BTTContent").addEventListener('click', function (e) {
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+    });
+  </script>
 </html>

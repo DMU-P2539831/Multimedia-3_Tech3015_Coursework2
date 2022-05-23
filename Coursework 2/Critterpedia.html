@@ -11,13 +11,15 @@
   </head>
   <body id="Critter_Body">
         <!-- Header -->
-      <img src="img/AssetIcons/BackICON.png" class="BackHome">
+    <div class="backDiv">
+      <img id="back" src="img/AssetIcons/BackICON.png" class="BackHome">
+    </div>
     <!-- Maybe Include Nav/Menu -->
     <!-- Header -->
 
-    <div>
-    <h1 id="CrittTitle"> Critterpedia </h1>
-    <img src="img/icons/Critterpedia.png" id="CritterIcon">
+    <div class = "titleDiv">
+      <h1 id="CrittTitle"> Critterpedia </h1>
+      <img src="img/icons/Critterpedia.png" id="CritterIcon">
     </div>
 
     <div id="CritterIntro">
@@ -26,7 +28,26 @@
   Here you can see what critters are available at the moment and see a little   more about them!</p>
     </div>
 
-    <div>
+    <div class="CritterContent">
+      <div class="NorthernList">
+        <p id ="NH"> Northern Hemisphere </p>
+        <div class="CriterDivider"></div>
+        <div id="NBugs"></div>
+        <div class="CriterDivider"></div>
+        <div id="NFish"></div>
+        <div class="CriterDivider"></div>
+        <div id="NSeaCreatures"></div>
+      </div>
+      <div class="SouthernList">
+        <p id = "SH" > Southern Hemisphere </p>
+        <div class="CriterDivider"></div>
+        <div id="SBugs"></div>
+        <div class="CriterDivider"></div>
+        <div id="SFish"></div>
+        <div class="CriterDivider"></div>
+        <div id="SSeaCreatures"></div>
+      </div>
+
       <!-- Page Content -->
     </div>
 
@@ -34,6 +55,35 @@
   </body>
 
   <script type="text/javascript">
-    updateAvailableBugs();
+    updateBugs();
+    updateFish();
+    updateSeaCreatures();
+
+    createCritters(availableBugsN, "NBugs");
+    createCritters(availableBugsS, "SBugs");
+    createCritters(availableFishN, "NFish");
+    createCritters(availableFishS, "SFish");
+    createCritters(availableSeaCreaturesN, "NSeaCreatures");
+    createCritters(availableSeaCreaturesS, "SSeaCreatures");
+
+    function createCritters(available, id){
+      for (let i = 0; i < available.length; i++) {
+        const parent = document.createElement("div");
+        parent.classList.add("Critter");
+        const image = document.createElement("img");
+        image.src = getCritterSRC(available[i]);
+        parent.appendChild(image);
+
+        const name = document.createElement("p");
+        name.innerHTML = available[i].Name;
+        parent.appendChild(name);
+        document.getElementById(id).appendChild(parent);
+      }
+    }
+
+    document.getElementById("back").addEventListener('click', function (e) {
+      window.location = 'AnimalCrossingCW2.html';
+    });
+
   </script>
 </html>

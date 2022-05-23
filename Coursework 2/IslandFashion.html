@@ -9,13 +9,15 @@
   </head>
   <body id="Fashion_Body">
         <!-- Header -->
-      <img src="img/AssetIcons/BackICON.png" class="BackHome">
+    <div class="backDiv">
+      <img id="back" src="img/AssetIcons/BackICON.png" class="BackHome">
+    </div>
     <!-- Maybe Include Nav/Menu -->
     <!-- Header -->
 
-    <div>
-    <h1 id="FashionTitle"> Island Fashion </h1>
-    <img src="img/icons/AbleSisters.png" id="FashionIcon">
+    <div class = "titleDiv">
+      <h1 id="FashionTitle"> Island Fashion </h1>
+      <img src="img/icons/AbleSisters.png" id="FashionIcon">
     </div>
 
     <div id="FashionIntro">
@@ -27,9 +29,36 @@
     <!-- DIVIDER -->
 
     <div>
-      <!-- Page Content -->
+      <div id="ShoppingPageContents">
+        <img src="img/AssetIcons/Promotion.png" id="PromotionIcon">
+        <p id="PromoText">Winter & Toy Day!</p>
+
+          <div Id="ShopItems">
+            <div>
+              <img src="img/islandFashion/SantaHatItem.png" >
+              <p>Santa Hat</p>
+            </div>
+
+            <div>
+              <img src="img/islandFashion/FestiveSweaterItem.png" >
+              <p>Festive Sweater</p>
+            </div>
+
+            <div>
+              <img src="img/islandFashion/FauxShearBoots_CustItem.png" >
+              <p>Faux-Shearling Boots</p>
+            </div>
+
+
+          </div>
+      </div>
     </div>
 
 
   </body>
+  <script>
+    document.getElementById("back").addEventListener('click', function (e) {
+      window.location = 'AnimalCrossingCW2.html';
+    });
+  </script>
 </html>

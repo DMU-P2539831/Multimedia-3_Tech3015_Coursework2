@@ -9,28 +9,67 @@
   </head>
   <body id="Shopping_Body">
         <!-- Header -->
-      <img src="img/AssetIcons/BackICON.png" class="BackHome">
+    <div class="backDiv">
+      <img id = "back" src="img/AssetIcons/BackICON.png" class="BackHome">
+    </div>
     <!-- Maybe Include Nav/Menu -->
     <!-- Header -->
 
-    <div>
-    <h1 id="ShoppingTitle"> Nook Shopping </h1>
-    <img src="img/icons/NookShopping.png" id="ShoppingIcon">
+    <div class="titleDiv">
+      <h1 id="ShoppingTitle"> Nook Shopping </h1>
+      <img src="img/icons/NookShopping.png" id="ShoppingIcon">
     </div>
 
     <div id="ShoppingIntro">
       <p id="ShoppingIntroText"> This is <span class="Keyword"> Nook Shopping!</span>
         <br>
 Here you can see what is available to you on the <span class="Keyword"> Nook Shopping </span> app on your <span class="Keyword"> NookPhone!</span> </p>
-
     </div>
 
-    <!-- DIVIDER -->
+  <div id="ShoppingHorizLine"></div>
 
-    <div>
-      <!-- Page Content -->
+    <div id="ShoppingPageContents">
+      <img src="img/AssetIcons/Promotion.png" id="PromotionIcon">
+      <p id="PromoText">Super Mario 35th Anniversary!</p>
+
+        <div Id="ShopItems">
+          <div>
+            <img src="img/Shopping/MushroomItem.png" >
+            <p>1-UP Mushroom</p>
+          </div>
+
+          <div>
+            <img src="img/Shopping/BlockItem.png" >
+            <p>? Block</p>
+          </div>
+
+          <div>
+            <img src="img/Shopping/MarioHatItem.png" >
+            <p>Mario Hat</p>
+          </div>
+
+          <div>
+            <img src="img/Shopping/StacheItem.png" >
+            <p>Mario 'Stache'</p>
+          </div>
+
+          <div>
+            <img src="img/Shopping/MarioOutfitItem.png" >
+            <p>Mario Outfit</p>
+          </div>
+
+          <div>
+            <img src="img/Shopping/MarioShoesItem.png" >
+            <p>Mario Shoes</p>
+          </div>
+        </div>
     </div>
 
 
   </body>
+  <script>
+    document.getElementById("back").addEventListener('click', function (e) {
+      window.location = 'AnimalCrossingCW2.html';
+    });
+  </script>
 </html>

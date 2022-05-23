@@ -9,13 +9,15 @@
   </head>
   <body id="IslandLife_Body">
         <!-- Header -->
-      <img src="img/AssetIcons/BackICON.png" class="BackHome">
+      <div class="backDiv">
+          <img id="back" src="img/AssetIcons/BackICON.png" class="BackHome">
+      </div>
     <!-- Maybe Include Nav/Menu -->
     <!-- Header -->
 
-    <div>
-    <h1 id="FashionTitle"> Island Life 101 </h1>
-    <img src="img/icons/IslandLife101.png" id="IslandLifeIcon">
+    <div class="titleDiv">
+      <h1 id="FashionTitle"> Island Life 101 </h1>
+      <img src="img/icons/IslandLife101.png" id="IslandLifeIcon">
     </div>
 
     <div id="IslandLifeIntro">
@@ -27,14 +29,17 @@
 
     <!-- DIVIDER -->
 
-    <div>
+    <div class="TipsList" id="TL">
+
       <!-- Page Content -->
     </div>
 
     <!--___________________________ BACK TO TOP _____________________________-->
-    <div Class="BTTOuter">
-      <div Class="BTTContent">
-        <p Class="BTTtext"> Back To Top </p>
+    <div id="BTTOuter">
+      <div id="BTTContent">
+        <img src="img/AssetIcons/ArrowVerti.png" id="VertiArrowIcon">
+        <p id="BTTtext"> Back To Top </p>
+        <div id="BTTHorizLine"></div>
       </div>
     </div>
 
@@ -42,4 +47,20 @@
     <!-- Here will include a potential footer image like on the actual Animal Crossing websites, but most improtantly copyright information / disclaimers  -->
     </footer>
   </body>
+
+  <script>
+    document.getElementById("back").addEventListener('click', function (e) {
+      window.location = 'AnimalCrossingCW2.html';
+    });
+
+    document.getElementById("BTTContent").addEventListener('click', function (e) {
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+    });
+
+    for (let i = 0; i < 5; i++) {
+      const image = document.createElement("img");
+      image.src = "img/101quotes/Quote" + i + ".png";
+      document.getElementById("TL").appendChild(image);
+    }
+  </script>
 </html>
