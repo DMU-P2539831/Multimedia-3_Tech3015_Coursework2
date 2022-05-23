@@ -1,0 +1,821 @@
+@font-face {
+  font-family: AnimalCrossingFont;
+  src: url(../font/nintendoP_Humming-E_002pr.otf);
+}
+
+
+Body {
+  color:#7A5126;
+  font-family: AnimalCrossingFont;
+  margin: 0;
+  /*background-color: #f7f1cf;*/
+  background-image: url(../img/Backgrounds/Icon_BG4.png);
+}
+
+
+/* Location, Item Or Event In Blue   #00b5cb */
+.Keyword {
+  color: #0fa1c6;
+
+
+}
+/*Character or Villager Name in Orange/Yellow*/
+.CharKeyword{
+  color:#ef8b09;
+}
+
+/*Island Name In Pink*/
+.IslKeyword {
+  color:#fe7cc6;
+}
+
+/*Player Name in Green*/
+.PlyrKeyword {
+  color:#2bd656;
+}
+
+/*-------------------------------- HEADER ---------------------------------*/
+video {
+  margin-top: -0.8em;
+  border-radius: 0.5em;
+
+}
+
+#HeadOuter {
+  background-color: #f1f0d2;
+  border-radius: 1em;
+  padding: 0.2em;
+  margin-top: -2em;
+  z-index: 2;
+  position: relative;
+}
+
+#HeadContent {
+  background-color: #fdffef;
+  border-radius: 1em;
+  margin: 0.5em;
+  padding: 0.1em;
+}
+
+#VertiArrowIcon_Head {
+  max-width: 2em;
+/*FIX POSITION (CENTER)*/
+transform: rotate(180deg);
+}
+
+#Headtext {
+  text-align: center;
+  /*text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color:#7A5126;*/
+  margin: 0.5em;
+}
+
+#HeadHorizLine {
+  height: 0em;
+  border-top: 0.15em dashed #d6d8bf;
+  margin-top: 1em;
+  flex: 1;
+  border-radius: 0.25em;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+
+#UserTime {
+  text-align: center;
+  margin: 0.5em;
+}
+
+#mainBody.active{
+  overflow: hidden;
+}
+
+nav {
+  text-align: right;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  padding: 20px;
+  right: -120vw;
+  z-index: 3;
+  overflow-y: scroll;
+}
+
+
+nav #menuButton {
+  position: relative;
+  right: calc(120vw - 5px);
+  color: #7A5126;
+}
+
+#MenuTitle {
+
+}
+
+nav .locationsTab, nav .npcsTab, nav .otherTab{
+  display: none;
+}
+
+nav .locationsTab.active, nav .npcsTab.active, nav .otherTab.active {
+  display: block;
+}
+
+nav .mainTab.hidden{
+  display: none;
+}
+
+.menuItem {
+  padding: 5%;
+  display: inline-block;
+  width: 95%;
+  font-size: 1.5em;
+  color: #7A5126;
+  text-decoration: none;
+  margin-right: 2em;
+}
+
+#NavHorizLine {
+  height: 0em;
+  border-top: 0.15em dashed #c6aa67;
+  margin-top: -0.8em;
+  flex: 1;
+  border-radius: 0.25em;
+  margin-right: -2em;
+  margin-left: 15em;
+}
+
+nav.active {
+  right: 0vw;
+  background-color: #feed9f;
+}
+
+nav.active #menuButton {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#MenuTitle{
+}
+
+
+/*------------------------------- HOME SECTIONS ----------------------------*/
+.HomeTab{
+  display: flex-wrap;
+  border-radius: 1em;
+  margin-top: 2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.HomeTabHeader{
+  display: flex;
+align-items: center;
+}
+
+.SectionIcons {
+  height:6vh;
+  Margin: 5px;
+}
+
+.HomeTabBody {
+  display: flex;
+
+}
+
+.HTHorizLine {
+  height: 0em;
+  border-top: 0.2em solid #f9c84b;
+  flex: 1;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+}
+
+.HTVertLine {
+  width: 0em;
+  border-left: 0.2em solid #f9c84b;
+  flex: 0;
+  margin-left: 1.5em;
+  border-radius: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.BulletinLine {
+    border-color: #feb92c;
+    background-color: #feb92c ;
+}
+
+
+.IslandLine {
+    border-color: #ad95d4;
+    background-color: #ad95d4 ;
+}
+
+.ShoppingLine {
+    border-color: #e9e12c;
+    background-color: #e9e12c ;
+}
+
+.FashionLine {
+    border-color: #f7b0b6;
+    background-color: #f7b0b6 ;
+}
+
+.CritterLine {
+  border-color: #f9c84b;
+  background-color: #f9c84b ;
+}
+
+h2 {
+margin: 10px;
+font-size: 1.2em;
+}
+
+.titleDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backDiv{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1em;
+}
+
+#back{
+  position: relative;
+  float: right;
+}
+
+.hemisphereDiv{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hemisphereDiv p{
+  margin: .25em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*--------------------------------BULLETIN BOARD------------------------------*/
+#BulletinBoardTab {
+  background-color: #fecc83;
+}
+#BulletinContents {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+/*--------------------------------ISLAND LIFE 101-----------------------------*/
+#IslandLifeTab {
+  background-color: #b0b1e6;
+}
+
+#IslandContents {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+#TipOfDay {
+  margin-top: -1em;
+  margin-bottom: 0.5em;
+}
+
+.tipContainer > *{
+  max-width: 90%;
+}
+
+.TipsList {
+  background-color: #d8d3f3;
+  border-radius: 2.5em;
+}
+
+.TipsList > *{
+  max-width: 100%;
+}
+
+/*--------------------------------NOOK SHOPPING-------------------------------*/
+#NookShoppingTab {
+  background-color: #eae983;
+}
+
+#ShoppingContents {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+#Promotion {
+  margin-top: -1em;
+  margin-bottom: 0.5em;
+}
+
+#ShoppingContents > * img {
+  max-width: 35%;
+  align-items: center;
+}
+
+/*#ShoppingContents > * p {
+  background-color: #f4d62f;
+}*/
+
+.LeafIcon {
+  max-width: 3.5em;
+  max-height: 1.5em;
+}
+
+.Item {
+display: flex;
+flex-direction: row;
+align-items: center;
+flex: none;
+  max-height: 1.6em;
+  border-radius: 0.5em;
+  background-color: #eff0be;
+  margin-top: 0.5em;
+}
+
+.ItemText {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  margin: 0.3em;
+  text-align: center;
+}
+
+.PriceText {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  margin: 0.3em;
+  text-align: center;
+}
+
+/*--------------------------------ISLAND FASHION------------------------------*/
+#IslandFashionTab {
+  background-color: #f7c5d4;
+}
+
+#FashionContents {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+#SeasonalCloth {
+  margin-top: -1em;
+  margin-bottom: 0.5em;
+}
+
+.FashionImages {
+  display: flex;
+  gap: 0em;
+  flex: 1;
+  width: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+
+.FashionImages > *{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.FashionImages > * p {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  margin: 0.3em;
+  text-align: center;
+}
+
+.Price {
+display: flex;
+flex-direction: row;
+align-items: center;
+flex: none;
+  max-height: 1.6em;
+  border-radius: 0.5em;
+  background-color: #eff0be;
+}
+
+.BellsIcon {
+  max-width: 2em;
+  max-height: 1.2em;
+}
+
+.FashionImages > * > * p.PriceText {
+  font-size: 0.8em;
+  margin-bottom: -0.1em;
+}
+
+.FashionImages > * img {
+  max-width: 75%;
+}
+
+
+/*--------------------------------CRITTERPEDIA--------------------------------*/
+#CritterpediaTab {
+  background-color: #F9D795;
+}
+
+
+#CritterContents {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+#CrittAvail {
+  margin-top: -1em;
+  margin-bottom: 0.2em;
+}
+
+#NH {
+  color: #FF5F58;
+  margin: 0.1em;
+}
+
+#SH {
+  color: #58A5FF;
+  margin: 0.1em;
+  margin-top: 0.5em;
+}
+
+
+.CritterImages {
+  display: flex;
+  gap: 0.5em;
+  flex: 1;
+  width: 100%;
+}
+
+
+.CritterImages > *{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.CritterImages > * p {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  margin: -0.1em;
+}
+
+
+/*----------------------------BACK TO TOP--------------------------------*/
+#BTTOuter {
+  background-color: #f1f0d2;
+  border-radius: 1em;
+  padding: 0.2em;
+  margin-top: 2em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+#BTTContent {
+  background-color: #fdffef;
+  border-radius: 1em;
+  margin: 0.5em;
+  padding: 0.1em;
+}
+
+#VertiArrowIcon {
+  max-width: 2em;
+/*FIX POSITION (CENTER)*/
+}
+
+#BTTtext {
+  text-align: center;
+  /*text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color:#7A5126;*/
+  margin: 0.5em;
+}
+
+#BTTHorizLine {
+  height: 0em;
+  border-top: 0.15em dashed #d6d8bf;
+  margin-top: -0.8em;
+  flex: 1;
+  border-radius: 0.25em;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+/*-------------------------------- FOOTER ----------------------------------*/
+
+/*___________________________________________________________________________*/
+/*__________________________ END OF HOME PAGE________________________________*/
+/*___________________________________________________________________________*/
+
+
+/*____________________________ MENU / NAVIGATION ____________________________*/
+
+.BackHome {
+max-width: 20%;
+}
+
+#MenuTitle {
+}
+
+
+
+/*___________________________________________________________________________*/
+/*____________________________ END OF NAVIGATION _____________________________*/
+/*___________________________________________________________________________*/
+
+
+/*___________________________ BULLETIN BOARD HOME ____________________________*/
+
+#Bulletin_Body {
+  background-image: url("../img/Backgrounds/BulletinBoard_LeafBG.png");
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.BackHome {
+max-width: 20%;
+}
+
+#BulletinTitle {
+  background-color: #f7f4e5;
+  border-radius: 0.5em;
+}
+
+#BulletinIcon {
+  max-width: 16%;
+}
+
+#BulletinIntro {
+  background-color: #f7f4e5;
+  border-radius: 2.5em;
+}
+
+#BulletinIntroText {
+  margin: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+#BulletinHorizLine {
+  height: 0em;
+  border-top: 0.15em dashed #ad8442;
+  margin: 2em;
+  flex: 1;
+  border-radius: 0.25em;
+
+}
+
+.twitter-timeline {
+  border-radius: 2em;
+}
+/*___________________________________________________________________________*/
+/*______________________ END OF BULLETIN BOARD PAGE __________________________*/
+/*___________________________________________________________________________*/
+
+
+
+
+/*___________________________ ISLAND LIFE 101 HOME ___________________________*/
+
+
+#IslandLife_Body {
+  background-image: url("../img/Backgrounds/IslandLife_LeafBG.png");
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+
+}
+#IslandLifeTitle {
+  background-color: #f7f4e5;
+  border-radius: 0.5em;
+}
+
+#IslandLifeIcon {
+  max-width: 16%;
+}
+
+#IslandLifeIntro {
+  background-color: #f7f4e5;
+  border-radius: 2.5em;
+}
+
+#IslandLifeIntroText {
+  margin: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+/*___________________________________________________________________________*/
+/*______________________ END OF ISLAND LIFE 101 PAGE _________________________*/
+/*___________________________________________________________________________*/
+
+
+
+
+/*___________________________ NOOK SHOPPING HOME _____________________________*/
+
+#Shopping_Body {
+  background-image: url("../img/Backgrounds/NookShopping_LeafBG.png");
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+#ShoppingTitle {
+  background-color: #f7f4e5;
+  border-radius: 0.5em;
+}
+
+#ShoppingIcon {
+  max-width: 16%;
+}
+
+#ShoppingIntro {
+  background-color: #f7f4e5;
+  border-radius: 2.5em;
+}
+
+#ShoppingIntroText {
+  margin: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+#ShoppingHorizLine {
+  height: 0em;
+  border-top: 0.15em dashed #ad8442;
+  margin-top: 2em;
+  flex: 1;
+  border-radius: 0.25em;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+#ShoppingPageContents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+#PromotionIcon {
+  max-width: 45%;
+}
+
+#PromoText{
+  margin-top: -2em;
+}
+
+#ShopItems {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap:1rem;
+}
+
+#ShopItems > * img{
+ max-width:20%;
+}
+
+#ShopItems div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #f1f0d2;
+  border-radius: .5rem;
+}
+
+/*___________________________________________________________________________*/
+/*______________________ END OF NOOK SHOPPING PAGE __________________________*/
+/*___________________________________________________________________________*/
+
+
+
+/*___________________________ ISLAND FASHION HOME ____________________________*/
+
+#Fashion_Body {
+  background-image: url("../img/Backgrounds/IslandFashion_LeafBG.png");
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+#FashionTitle {
+  background-color: #f7f4e5;
+  border-radius: 0.5em;
+}
+
+#FashionIcon {
+  max-width: 16%;
+}
+
+#FashionIntro {
+  background-color: #f7f4e5;
+  border-radius: 2.5em;
+}
+
+#FashionIntroText {
+  margin: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+/*___________________________________________________________________________*/
+/*______________________ END OF ISLAND FASHION PAGE __________________________*/
+/*___________________________________________________________________________*/
+
+
+
+/*____________________________ CRITTERPEDIA HOME _____________________________*/
+
+#Critter_Body {
+  background-image: url("../img/Backgrounds/Critterpedia_LeafBG.png");
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+#CrittTitle {
+  background-color: #f7f4e5;
+  border-radius: 0.5em;
+}
+
+#CritterIcon {
+  max-width: 16%;
+}
+
+#CritterIntro {
+  background-color: #f7f4e5;
+  border-radius: 2.5em;
+}
+
+#CritterIntroText {
+  margin: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+.NorthernList, .SouthernList{
+  display: flex;
+  flex-direction: column;
+}
+
+.NorthernList > *, .SouthernList > *{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.NorthernList #NH, .SouthernList > #SH{
+  margin-top: 2em;
+}
+
+.Critter{
+  min-width: 20%;
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center
+}
+
+.Critter p{
+  text-align: center;
+  font-size: .8rem;
+}
+
+.CriterDivider{
+  height: 0em;
+  border-top: 0.2em solid #f9c84b;
+  flex: 1;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+}
+
+
+/*___________________________________________________________________________*/
+/*______________________ END OF CRITTERPEDIA PAGE __________________________*/
+/*___________________________________________________________________________*/
